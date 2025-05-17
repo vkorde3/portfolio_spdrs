@@ -1,0 +1,10 @@
+2025-05-13 23:40:45,329 - INFO - Starting sector portfolios generation for 2025-03-02
+2025-05-13 23:40:46,119 - WARNING - No trading on 2025-03-02.
+2025-05-13 23:40:46,151 - ERROR - Error during sector portfolios generation
+Traceback (most recent call last):
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_asset.py", line 53, in sector_portfolios
+    df_portfolios = produce_sector_portfolios(partition_date, logger=file_logger)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_producer.py", line 57, in produce_sector_portfolios
+    raise ValueError(f"No trading on {portfolio_date}.")
+ValueError: No trading on 2025-03-02.

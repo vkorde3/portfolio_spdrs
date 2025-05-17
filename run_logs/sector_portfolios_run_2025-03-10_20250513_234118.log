@@ -1,0 +1,111 @@
+2025-05-13 23:41:18,724 - INFO - Starting sector portfolios generation for 2025-03-10
+2025-05-13 23:41:19,474 - INFO - Estimated beta for XLK: 1.4643
+2025-05-13 23:41:19,493 - INFO - Estimated beta for XLF: 0.8009
+2025-05-13 23:41:19,505 - INFO - Estimated beta for XLV: 0.3160
+2025-05-13 23:41:19,535 - INFO - Estimated beta for XLY: 1.2738
+2025-05-13 23:41:19,563 - INFO - Estimated beta for XLP: 0.1737
+2025-05-13 23:41:19,586 - INFO - Estimated beta for XLE: 0.4659
+2025-05-13 23:41:19,604 - INFO - Estimated beta for XLI: 0.7493
+2025-05-13 23:41:19,618 - INFO - Estimated beta for XLB: 0.7019
+2025-05-13 23:41:19,625 - INFO - Estimated beta for XLU: 0.5208
+2025-05-13 23:41:19,637 - INFO - Estimated beta for XLC: 0.8273
+2025-05-13 23:41:19,645 - INFO - Estimated beta for XLRE: 0.5201
+2025-05-13 23:41:19,702 - INFO - Generated portfolios:
+   portfolio_name   sym        wt
+0        XLK_long   XLK  1.000000
+1        XLK_long   SPY -1.464311
+2       XLK_short   XLK -1.000000
+3       XLK_short   SPY  1.464311
+4        XLF_long   XLF  1.000000
+5        XLF_long   SPY -0.800931
+6       XLF_short   XLF -1.000000
+7       XLF_short   SPY  0.800931
+8        XLV_long   XLV  1.000000
+9        XLV_long   SPY -0.315963
+10      XLV_short   XLV -1.000000
+11      XLV_short   SPY  0.315963
+12       XLY_long   XLY  1.000000
+13       XLY_long   SPY -1.273809
+14      XLY_short   XLY -1.000000
+15      XLY_short   SPY  1.273809
+16       XLP_long   XLP  1.000000
+17       XLP_long   SPY -0.173705
+18      XLP_short   XLP -1.000000
+19      XLP_short   SPY  0.173705
+20       XLE_long   XLE  1.000000
+21       XLE_long   SPY -0.465909
+22      XLE_short   XLE -1.000000
+23      XLE_short   SPY  0.465909
+24       XLI_long   XLI  1.000000
+25       XLI_long   SPY -0.749267
+26      XLI_short   XLI -1.000000
+27      XLI_short   SPY  0.749267
+28       XLB_long   XLB  1.000000
+29       XLB_long   SPY -0.701903
+30      XLB_short   XLB -1.000000
+31      XLB_short   SPY  0.701903
+32       XLU_long   XLU  1.000000
+33       XLU_long   SPY -0.520801
+34      XLU_short   XLU -1.000000
+35      XLU_short   SPY  0.520801
+36       XLC_long   XLC  1.000000
+37       XLC_long   SPY -0.827307
+38      XLC_short   XLC -1.000000
+39      XLC_short   SPY  0.827307
+40      XLRE_long  XLRE  1.000000
+41      XLRE_long   SPY -0.520137
+42     XLRE_short  XLRE -1.000000
+43     XLRE_short   SPY  0.520137
+2025-05-13 23:41:19,719 - INFO - Saved portfolios to data\sector_portfolios--2025-05-13_23-41-19.csv
+2025-05-13 23:41:19,750 - INFO - Portfolios CSV content:
+portfolio_name,sym,wt
+XLK_long,XLK,1.0
+XLK_long,SPY,-1.464311015122702
+XLK_short,XLK,-1.0
+XLK_short,SPY,1.464311015122702
+XLF_long,XLF,1.0
+XLF_long,SPY,-0.8009309387463641
+XLF_short,XLF,-1.0
+XLF_short,SPY,0.8009309387463641
+XLV_long,XLV,1.0
+XLV_long,SPY,-0.31596290022668116
+XLV_short,XLV,-1.0
+XLV_short,SPY,0.31596290022668116
+XLY_long,XLY,1.0
+XLY_long,SPY,-1.2738089373393398
+XLY_short,XLY,-1.0
+XLY_short,SPY,1.2738089373393398
+XLP_long,XLP,1.0
+XLP_long,SPY,-0.17370482837336035
+XLP_short,XLP,-1.0
+XLP_short,SPY,0.17370482837336035
+XLE_long,XLE,1.0
+XLE_long,SPY,-0.4659091307860544
+XLE_short,XLE,-1.0
+XLE_short,SPY,0.4659091307860544
+XLI_long,XLI,1.0
+XLI_long,SPY,-0.7492674086325731
+XLI_short,XLI,-1.0
+XLI_short,SPY,0.7492674086325731
+XLB_long,XLB,1.0
+XLB_long,SPY,-0.701902800404597
+XLB_short,XLB,-1.0
+XLB_short,SPY,0.701902800404597
+XLU_long,XLU,1.0
+XLU_long,SPY,-0.5208008463419498
+XLU_short,XLU,-1.0
+XLU_short,SPY,0.5208008463419498
+XLC_long,XLC,1.0
+XLC_long,SPY,-0.8273065690601926
+XLC_short,XLC,-1.0
+XLC_short,SPY,0.8273065690601926
+XLRE_long,XLRE,1.0
+XLRE_long,SPY,-0.5201370570292799
+XLRE_short,XLRE,-1.0
+XLRE_short,SPY,0.5201370570292799
+
+2025-05-13 23:41:36,073 - INFO - vBase receipt:
+{'objectCid': '0x0fe95886503b50845f0e31149c8a5345d8100a33bac772c896e30374a86a0687',
+ 'timestamp': '2025-05-14 03:41:29+00:00',
+ 'transactionHash': '0xf45393bf5e7416ea93744909b2ea874c37520874ee69508bdbdd797142b5ab9e',
+ 'user': '0x17324356831b7e30263e015a4D94aB9dA279e3a5'}

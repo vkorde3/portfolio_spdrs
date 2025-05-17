@@ -1,0 +1,132 @@
+2025-05-14 00:41:16,860 - INFO - Starting sector portfolios generation for 2025-01-07
+2025-05-14 00:41:18,307 - INFO - Estimated beta for XLK: 1.3502
+2025-05-14 00:41:18,331 - INFO - Estimated beta for XLF: 0.7935
+2025-05-14 00:41:18,362 - INFO - Estimated beta for XLV: 0.5314
+2025-05-14 00:41:18,383 - INFO - Estimated beta for XLY: 1.3384
+2025-05-14 00:41:18,413 - INFO - Estimated beta for XLP: 0.2803
+2025-05-14 00:41:18,455 - INFO - Estimated beta for XLE: 0.3889
+2025-05-14 00:41:18,490 - INFO - Estimated beta for XLI: 0.8524
+2025-05-14 00:41:18,519 - INFO - Estimated beta for XLB: 0.6098
+2025-05-14 00:41:18,555 - INFO - Estimated beta for XLU: 0.3051
+2025-05-14 00:41:18,578 - INFO - Estimated beta for XLC: 0.8563
+2025-05-14 00:41:18,608 - INFO - Estimated beta for XLRE: 0.6442
+2025-05-14 00:41:18,675 - INFO - Generated portfolios:
+   portfolio_name   sym        wt
+0        XLK_long   XLK  1.000000
+1        XLK_long   SPY -1.350186
+2       XLK_short   XLK -1.000000
+3       XLK_short   SPY  1.350186
+4        XLF_long   XLF  1.000000
+5        XLF_long   SPY -0.793537
+6       XLF_short   XLF -1.000000
+7       XLF_short   SPY  0.793537
+8        XLV_long   XLV  1.000000
+9        XLV_long   SPY -0.531378
+10      XLV_short   XLV -1.000000
+11      XLV_short   SPY  0.531378
+12       XLY_long   XLY  1.000000
+13       XLY_long   SPY -1.338401
+14      XLY_short   XLY -1.000000
+15      XLY_short   SPY  1.338401
+16       XLP_long   XLP  1.000000
+17       XLP_long   SPY -0.280304
+18      XLP_short   XLP -1.000000
+19      XLP_short   SPY  0.280304
+20       XLE_long   XLE  1.000000
+21       XLE_long   SPY -0.388886
+22      XLE_short   XLE -1.000000
+23      XLE_short   SPY  0.388886
+24       XLI_long   XLI  1.000000
+25       XLI_long   SPY -0.852421
+26      XLI_short   XLI -1.000000
+27      XLI_short   SPY  0.852421
+28       XLB_long   XLB  1.000000
+29       XLB_long   SPY -0.609831
+30      XLB_short   XLB -1.000000
+31      XLB_short   SPY  0.609831
+32       XLU_long   XLU  1.000000
+33       XLU_long   SPY -0.305133
+34      XLU_short   XLU -1.000000
+35      XLU_short   SPY  0.305133
+36       XLC_long   XLC  1.000000
+37       XLC_long   SPY -0.856259
+38      XLC_short   XLC -1.000000
+39      XLC_short   SPY  0.856259
+40      XLRE_long  XLRE  1.000000
+41      XLRE_long   SPY -0.644184
+42     XLRE_short  XLRE -1.000000
+43     XLRE_short   SPY  0.644184
+2025-05-14 00:41:18,714 - INFO - Saved portfolios to data\sector_portfolios--2025-05-14_00-41-18.csv
+2025-05-14 00:41:18,755 - INFO - Portfolios CSV content:
+portfolio_name,sym,wt
+XLK_long,XLK,1.0
+XLK_long,SPY,-1.3501858621609002
+XLK_short,XLK,-1.0
+XLK_short,SPY,1.3501858621609002
+XLF_long,XLF,1.0
+XLF_long,SPY,-0.7935372298006113
+XLF_short,XLF,-1.0
+XLF_short,SPY,0.7935372298006113
+XLV_long,XLV,1.0
+XLV_long,SPY,-0.5313781109447229
+XLV_short,XLV,-1.0
+XLV_short,SPY,0.5313781109447229
+XLY_long,XLY,1.0
+XLY_long,SPY,-1.3384014739123666
+XLY_short,XLY,-1.0
+XLY_short,SPY,1.3384014739123666
+XLP_long,XLP,1.0
+XLP_long,SPY,-0.2803041714490926
+XLP_short,XLP,-1.0
+XLP_short,SPY,0.2803041714490926
+XLE_long,XLE,1.0
+XLE_long,SPY,-0.38888582177585374
+XLE_short,XLE,-1.0
+XLE_short,SPY,0.38888582177585374
+XLI_long,XLI,1.0
+XLI_long,SPY,-0.852420690508459
+XLI_short,XLI,-1.0
+XLI_short,SPY,0.852420690508459
+XLB_long,XLB,1.0
+XLB_long,SPY,-0.6098309840150448
+XLB_short,XLB,-1.0
+XLB_short,SPY,0.6098309840150448
+XLU_long,XLU,1.0
+XLU_long,SPY,-0.3051327917023436
+XLU_short,XLU,-1.0
+XLU_short,SPY,0.3051327917023436
+XLC_long,XLC,1.0
+XLC_long,SPY,-0.8562592770712547
+XLC_short,XLC,-1.0
+XLC_short,SPY,0.8562592770712547
+XLRE_long,XLRE,1.0
+XLRE_long,SPY,-0.64418354588482
+XLRE_short,XLRE,-1.0
+XLRE_short,SPY,0.64418354588482
+
+2025-05-14 00:41:29,865 - ERROR - Error during sector portfolios generation
+Traceback (most recent call last):
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_asset.py", line 79, in sector_portfolios
+    receipt = ds.add_record(body)
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\vbase_dataset.py", line 264, in add_record
+    cl = self.vbc.add_set_object(self.cid, object_cid)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\vbase_client.py", line 242, in add_set_object
+    return self.commitment_service.add_set_object(set_cid, object_cid)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 437, in add_set_object
+    receipt = self._post_execute(
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 343, in _post_execute
+    raise e
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 324, in _post_execute
+    receipt = self._call_forwarder_api(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 184, in _call_forwarder_api
+    raise http_err
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 172, in _call_forwarder_api
+    response.raise_for_status()
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.vbase.com/forwarder/execute?from=0x17324356831b7e30263e015a4D94aB9dA279e3a5

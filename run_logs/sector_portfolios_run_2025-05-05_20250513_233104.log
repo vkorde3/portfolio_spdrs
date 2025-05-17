@@ -1,0 +1,9 @@
+2025-05-13 23:31:04,104 - INFO - Starting sector portfolios generation for 2025-05-05
+2025-05-13 23:31:04,324 - ERROR - Error during sector portfolios generation
+Traceback (most recent call last):
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_asset.py", line 53, in sector_portfolios
+    df_portfolios = produce_sector_portfolios(partition_date, logger=file_logger)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_producer.py", line 82, in produce_sector_portfolios
+    raise ValueError("No data was downloaded for the given tickers.")
+ValueError: No data was downloaded for the given tickers.

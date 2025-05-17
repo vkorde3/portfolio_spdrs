@@ -1,0 +1,130 @@
+2025-05-13 23:44:00,244 - INFO - Starting sector portfolios generation for 2025-04-15
+2025-05-13 23:44:01,249 - INFO - Estimated beta for XLK: 1.2860
+2025-05-13 23:44:01,266 - INFO - Estimated beta for XLF: 0.7573
+2025-05-13 23:44:01,299 - INFO - Estimated beta for XLV: 0.4179
+2025-05-13 23:44:01,316 - INFO - Estimated beta for XLY: 1.0639
+2025-05-13 23:44:01,332 - INFO - Estimated beta for XLP: 0.2881
+2025-05-13 23:44:01,367 - INFO - Estimated beta for XLE: 0.8643
+2025-05-13 23:44:01,415 - INFO - Estimated beta for XLI: 0.8752
+2025-05-13 23:44:01,432 - INFO - Estimated beta for XLB: 0.8424
+2025-05-13 23:44:01,449 - INFO - Estimated beta for XLU: 0.3634
+2025-05-13 23:44:01,466 - INFO - Estimated beta for XLC: 0.8553
+2025-05-13 23:44:01,495 - INFO - Estimated beta for XLRE: 0.5759
+2025-05-13 23:44:01,534 - INFO - Generated portfolios:
+   portfolio_name   sym        wt
+0        XLK_long   XLK  1.000000
+1        XLK_long   SPY -1.286025
+2       XLK_short   XLK -1.000000
+3       XLK_short   SPY  1.286025
+4        XLF_long   XLF  1.000000
+5        XLF_long   SPY -0.757272
+6       XLF_short   XLF -1.000000
+7       XLF_short   SPY  0.757272
+8        XLV_long   XLV  1.000000
+9        XLV_long   SPY -0.417926
+10      XLV_short   XLV -1.000000
+11      XLV_short   SPY  0.417926
+12       XLY_long   XLY  1.000000
+13       XLY_long   SPY -1.063924
+14      XLY_short   XLY -1.000000
+15      XLY_short   SPY  1.063924
+16       XLP_long   XLP  1.000000
+17       XLP_long   SPY -0.288139
+18      XLP_short   XLP -1.000000
+19      XLP_short   SPY  0.288139
+20       XLE_long   XLE  1.000000
+21       XLE_long   SPY -0.864302
+22      XLE_short   XLE -1.000000
+23      XLE_short   SPY  0.864302
+24       XLI_long   XLI  1.000000
+25       XLI_long   SPY -0.875199
+26      XLI_short   XLI -1.000000
+27      XLI_short   SPY  0.875199
+28       XLB_long   XLB  1.000000
+29       XLB_long   SPY -0.842441
+30      XLB_short   XLB -1.000000
+31      XLB_short   SPY  0.842441
+32       XLU_long   XLU  1.000000
+33       XLU_long   SPY -0.363399
+34      XLU_short   XLU -1.000000
+35      XLU_short   SPY  0.363399
+36       XLC_long   XLC  1.000000
+37       XLC_long   SPY -0.855289
+38      XLC_short   XLC -1.000000
+39      XLC_short   SPY  0.855289
+40      XLRE_long  XLRE  1.000000
+41      XLRE_long   SPY -0.575949
+42     XLRE_short  XLRE -1.000000
+43     XLRE_short   SPY  0.575949
+2025-05-13 23:44:01,549 - INFO - Saved portfolios to data\sector_portfolios--2025-05-13_23-44-01.csv
+2025-05-13 23:44:01,602 - INFO - Portfolios CSV content:
+portfolio_name,sym,wt
+XLK_long,XLK,1.0
+XLK_long,SPY,-1.2860247107071283
+XLK_short,XLK,-1.0
+XLK_short,SPY,1.2860247107071283
+XLF_long,XLF,1.0
+XLF_long,SPY,-0.7572722601983779
+XLF_short,XLF,-1.0
+XLF_short,SPY,0.7572722601983779
+XLV_long,XLV,1.0
+XLV_long,SPY,-0.41792564588940395
+XLV_short,XLV,-1.0
+XLV_short,SPY,0.41792564588940395
+XLY_long,XLY,1.0
+XLY_long,SPY,-1.0639237608803487
+XLY_short,XLY,-1.0
+XLY_short,SPY,1.0639237608803487
+XLP_long,XLP,1.0
+XLP_long,SPY,-0.288139223120573
+XLP_short,XLP,-1.0
+XLP_short,SPY,0.288139223120573
+XLE_long,XLE,1.0
+XLE_long,SPY,-0.8643021142785482
+XLE_short,XLE,-1.0
+XLE_short,SPY,0.8643021142785482
+XLI_long,XLI,1.0
+XLI_long,SPY,-0.8751994918153589
+XLI_short,XLI,-1.0
+XLI_short,SPY,0.8751994918153589
+XLB_long,XLB,1.0
+XLB_long,SPY,-0.8424409145297356
+XLB_short,XLB,-1.0
+XLB_short,SPY,0.8424409145297356
+XLU_long,XLU,1.0
+XLU_long,SPY,-0.36339942075842335
+XLU_short,XLU,-1.0
+XLU_short,SPY,0.36339942075842335
+XLC_long,XLC,1.0
+XLC_long,SPY,-0.8552891857658057
+XLC_short,XLC,-1.0
+XLC_short,SPY,0.8552891857658057
+XLRE_long,XLRE,1.0
+XLRE_long,SPY,-0.5759491253723906
+XLRE_short,XLRE,-1.0
+XLRE_short,SPY,0.5759491253723906
+
+2025-05-13 23:44:14,539 - ERROR - Error during sector portfolios generation
+Traceback (most recent call last):
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_asset.py", line 79, in sector_portfolios
+    receipt = ds.add_record(body)
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\vbase_dataset.py", line 264, in add_record
+    cl = self.vbc.add_set_object(self.cid, object_cid)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\vbase_client.py", line 242, in add_set_object
+    return self.commitment_service.add_set_object(set_cid, object_cid)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 437, in add_set_object
+    receipt = self._post_execute(
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 343, in _post_execute
+    raise e
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 324, in _post_execute
+    receipt = self._call_forwarder_api(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 187, in _call_forwarder_api
+    raise req_err
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 179, in _call_forwarder_api
+    raise requests.RequestException(response_json["log"])
+requests.exceptions.RequestException: Error: sendTxAndWaitForHash(): Failed to send transaction after 10 retries

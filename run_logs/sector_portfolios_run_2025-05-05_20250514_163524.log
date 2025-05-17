@@ -1,0 +1,132 @@
+2025-05-14 16:35:24,247 - INFO - Starting sector portfolios generation for 2025-05-05
+2025-05-14 16:35:24,526 - INFO - Estimated beta for XLK: 1.2794
+2025-05-14 16:35:24,546 - INFO - Estimated beta for XLF: 0.7859
+2025-05-14 16:35:24,557 - INFO - Estimated beta for XLV: 0.4581
+2025-05-14 16:35:24,559 - INFO - Estimated beta for XLY: 1.0859
+2025-05-14 16:35:24,559 - INFO - Estimated beta for XLP: 0.3024
+2025-05-14 16:35:24,582 - INFO - Estimated beta for XLE: 0.8516
+2025-05-14 16:35:24,582 - INFO - Estimated beta for XLI: 0.8623
+2025-05-14 16:35:24,601 - INFO - Estimated beta for XLB: 0.8380
+2025-05-14 16:35:24,613 - INFO - Estimated beta for XLU: 0.3882
+2025-05-14 16:35:24,620 - INFO - Estimated beta for XLC: 0.8774
+2025-05-14 16:35:24,624 - INFO - Estimated beta for XLRE: 0.5712
+2025-05-14 16:35:24,659 - INFO - Generated portfolios:
+   portfolio_name   sym        wt
+0        XLK_long   XLK  1.000000
+1        XLK_long   SPY -1.279426
+2       XLK_short   XLK -1.000000
+3       XLK_short   SPY  1.279426
+4        XLF_long   XLF  1.000000
+5        XLF_long   SPY -0.785904
+6       XLF_short   XLF -1.000000
+7       XLF_short   SPY  0.785904
+8        XLV_long   XLV  1.000000
+9        XLV_long   SPY -0.458097
+10      XLV_short   XLV -1.000000
+11      XLV_short   SPY  0.458097
+12       XLY_long   XLY  1.000000
+13       XLY_long   SPY -1.085870
+14      XLY_short   XLY -1.000000
+15      XLY_short   SPY  1.085870
+16       XLP_long   XLP  1.000000
+17       XLP_long   SPY -0.302436
+18      XLP_short   XLP -1.000000
+19      XLP_short   SPY  0.302436
+20       XLE_long   XLE  1.000000
+21       XLE_long   SPY -0.851559
+22      XLE_short   XLE -1.000000
+23      XLE_short   SPY  0.851559
+24       XLI_long   XLI  1.000000
+25       XLI_long   SPY -0.862304
+26      XLI_short   XLI -1.000000
+27      XLI_short   SPY  0.862304
+28       XLB_long   XLB  1.000000
+29       XLB_long   SPY -0.837964
+30      XLB_short   XLB -1.000000
+31      XLB_short   SPY  0.837964
+32       XLU_long   XLU  1.000000
+33       XLU_long   SPY -0.388201
+34      XLU_short   XLU -1.000000
+35      XLU_short   SPY  0.388201
+36       XLC_long   XLC  1.000000
+37       XLC_long   SPY -0.877380
+38      XLC_short   XLC -1.000000
+39      XLC_short   SPY  0.877380
+40      XLRE_long  XLRE  1.000000
+41      XLRE_long   SPY -0.571215
+42     XLRE_short  XLRE -1.000000
+43     XLRE_short   SPY  0.571215
+2025-05-14 16:35:24,674 - INFO - Saved portfolios to data\sector_portfolios--2025-05-14_16-35-24.csv
+2025-05-14 16:35:24,698 - INFO - Portfolios CSV content:
+portfolio_name,sym,wt
+XLK_long,XLK,1.0
+XLK_long,SPY,-1.2794255345524848
+XLK_short,XLK,-1.0
+XLK_short,SPY,1.2794255345524848
+XLF_long,XLF,1.0
+XLF_long,SPY,-0.7859038730392579
+XLF_short,XLF,-1.0
+XLF_short,SPY,0.7859038730392579
+XLV_long,XLV,1.0
+XLV_long,SPY,-0.45809692911115896
+XLV_short,XLV,-1.0
+XLV_short,SPY,0.45809692911115896
+XLY_long,XLY,1.0
+XLY_long,SPY,-1.0858698562127713
+XLY_short,XLY,-1.0
+XLY_short,SPY,1.0858698562127713
+XLP_long,XLP,1.0
+XLP_long,SPY,-0.3024355333993186
+XLP_short,XLP,-1.0
+XLP_short,SPY,0.3024355333993186
+XLE_long,XLE,1.0
+XLE_long,SPY,-0.8515589467077449
+XLE_short,XLE,-1.0
+XLE_short,SPY,0.8515589467077449
+XLI_long,XLI,1.0
+XLI_long,SPY,-0.8623042262735687
+XLI_short,XLI,-1.0
+XLI_short,SPY,0.8623042262735687
+XLB_long,XLB,1.0
+XLB_long,SPY,-0.8379638312393144
+XLB_short,XLB,-1.0
+XLB_short,SPY,0.8379638312393144
+XLU_long,XLU,1.0
+XLU_long,SPY,-0.3882007189550773
+XLU_short,XLU,-1.0
+XLU_short,SPY,0.3882007189550773
+XLC_long,XLC,1.0
+XLC_long,SPY,-0.8773796122002061
+XLC_short,XLC,-1.0
+XLC_short,SPY,0.8773796122002061
+XLRE_long,XLRE,1.0
+XLRE_long,SPY,-0.5712153143303547
+XLRE_short,XLRE,-1.0
+XLRE_short,SPY,0.5712153143303547
+
+2025-05-14 16:35:24,884 - ERROR - Error during sector portfolios generation
+Traceback (most recent call last):
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_asset.py", line 78, in sector_portfolios
+    ds = VBaseDataset(vbc, PORTFOLIO_NAME, VBaseStringObject)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\vbase_dataset.py", line 178, in __init__
+    self._create_new_if_necessary(name, record_type)
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\vbase_dataset.py", line 80, in _create_new_if_necessary
+    if not self.vbc.user_named_set_exists(self.vbc.get_default_user(), name):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\vbase_client.py", line 164, in user_named_set_exists
+    return self.user_set_exists(user, self.get_named_set_cid(name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\vbase_client.py", line 132, in user_set_exists
+    return self.commitment_service.user_set_exists(user, set_cid)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 388, in user_set_exists
+    ret = self._call_forwarder_api(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 184, in _call_forwarder_api
+    raise http_err
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 172, in _call_forwarder_api
+    response.raise_for_status()
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://dev.api.vbase.com/forwarder/call?from=0x17324356831b7e30263e015a4D94aB9dA279e3a5&data=0x25d9315f00000000000000000000000017324356831b7e30263e015a4d94ab9da279e3a5e3371777c25301a111acc5a20a8dba6af31224d5eb988e9070471ea6a500c786

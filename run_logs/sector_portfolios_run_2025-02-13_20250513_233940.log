@@ -1,0 +1,150 @@
+2025-05-13 23:39:40,390 - INFO - Starting sector portfolios generation for 2025-02-13
+2025-05-13 23:39:40,924 - INFO - Estimated beta for XLK: 1.3931
+2025-05-13 23:39:40,933 - INFO - Estimated beta for XLF: 0.7915
+2025-05-13 23:39:40,952 - INFO - Estimated beta for XLV: 0.3262
+2025-05-13 23:39:40,962 - INFO - Estimated beta for XLY: 1.3297
+2025-05-13 23:39:40,974 - INFO - Estimated beta for XLP: 0.3005
+2025-05-13 23:39:40,990 - INFO - Estimated beta for XLE: 0.4544
+2025-05-13 23:39:41,007 - INFO - Estimated beta for XLI: 0.7512
+2025-05-13 23:39:41,014 - INFO - Estimated beta for XLB: 0.6572
+2025-05-13 23:39:41,024 - INFO - Estimated beta for XLU: 0.5724
+2025-05-13 23:39:41,039 - INFO - Estimated beta for XLC: 0.7771
+2025-05-13 23:39:41,061 - INFO - Estimated beta for XLRE: 0.7202
+2025-05-13 23:39:41,115 - INFO - Generated portfolios:
+   portfolio_name   sym        wt
+0        XLK_long   XLK  1.000000
+1        XLK_long   SPY -1.393113
+2       XLK_short   XLK -1.000000
+3       XLK_short   SPY  1.393113
+4        XLF_long   XLF  1.000000
+5        XLF_long   SPY -0.791545
+6       XLF_short   XLF -1.000000
+7       XLF_short   SPY  0.791545
+8        XLV_long   XLV  1.000000
+9        XLV_long   SPY -0.326228
+10      XLV_short   XLV -1.000000
+11      XLV_short   SPY  0.326228
+12       XLY_long   XLY  1.000000
+13       XLY_long   SPY -1.329746
+14      XLY_short   XLY -1.000000
+15      XLY_short   SPY  1.329746
+16       XLP_long   XLP  1.000000
+17       XLP_long   SPY -0.300455
+18      XLP_short   XLP -1.000000
+19      XLP_short   SPY  0.300455
+20       XLE_long   XLE  1.000000
+21       XLE_long   SPY -0.454408
+22      XLE_short   XLE -1.000000
+23      XLE_short   SPY  0.454408
+24       XLI_long   XLI  1.000000
+25       XLI_long   SPY -0.751237
+26      XLI_short   XLI -1.000000
+27      XLI_short   SPY  0.751237
+28       XLB_long   XLB  1.000000
+29       XLB_long   SPY -0.657225
+30      XLB_short   XLB -1.000000
+31      XLB_short   SPY  0.657225
+32       XLU_long   XLU  1.000000
+33       XLU_long   SPY -0.572353
+34      XLU_short   XLU -1.000000
+35      XLU_short   SPY  0.572353
+36       XLC_long   XLC  1.000000
+37       XLC_long   SPY -0.777136
+38      XLC_short   XLC -1.000000
+39      XLC_short   SPY  0.777136
+40      XLRE_long  XLRE  1.000000
+41      XLRE_long   SPY -0.720208
+42     XLRE_short  XLRE -1.000000
+43     XLRE_short   SPY  0.720208
+2025-05-13 23:39:41,130 - INFO - Saved portfolios to data\sector_portfolios--2025-05-13_23-39-41.csv
+2025-05-13 23:39:41,157 - INFO - Portfolios CSV content:
+portfolio_name,sym,wt
+XLK_long,XLK,1.0
+XLK_long,SPY,-1.393113261249508
+XLK_short,XLK,-1.0
+XLK_short,SPY,1.393113261249508
+XLF_long,XLF,1.0
+XLF_long,SPY,-0.7915453261575812
+XLF_short,XLF,-1.0
+XLF_short,SPY,0.7915453261575812
+XLV_long,XLV,1.0
+XLV_long,SPY,-0.3262279552227279
+XLV_short,XLV,-1.0
+XLV_short,SPY,0.3262279552227279
+XLY_long,XLY,1.0
+XLY_long,SPY,-1.3297463671265288
+XLY_short,XLY,-1.0
+XLY_short,SPY,1.3297463671265288
+XLP_long,XLP,1.0
+XLP_long,SPY,-0.3004548681971445
+XLP_short,XLP,-1.0
+XLP_short,SPY,0.3004548681971445
+XLE_long,XLE,1.0
+XLE_long,SPY,-0.4544075843470262
+XLE_short,XLE,-1.0
+XLE_short,SPY,0.4544075843470262
+XLI_long,XLI,1.0
+XLI_long,SPY,-0.7512369621674918
+XLI_short,XLI,-1.0
+XLI_short,SPY,0.7512369621674918
+XLB_long,XLB,1.0
+XLB_long,SPY,-0.6572252422359182
+XLB_short,XLB,-1.0
+XLB_short,SPY,0.6572252422359182
+XLU_long,XLU,1.0
+XLU_long,SPY,-0.5723534256527093
+XLU_short,XLU,-1.0
+XLU_short,SPY,0.5723534256527093
+XLC_long,XLC,1.0
+XLC_long,SPY,-0.7771355401352011
+XLC_short,XLC,-1.0
+XLC_short,SPY,0.7771355401352011
+XLRE_long,XLRE,1.0
+XLRE_long,SPY,-0.7202083943789122
+XLRE_short,XLRE,-1.0
+XLRE_short,SPY,0.7202083943789122
+
+2025-05-13 23:39:57,509 - ERROR - Error during sector portfolios generation
+Traceback (most recent call last):
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_asset.py", line 79, in sector_portfolios
+    receipt = ds.add_record(body)
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\vbase_dataset.py", line 264, in add_record
+    cl = self.vbc.add_set_object(self.cid, object_cid)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\vbase_client.py", line 242, in add_set_object
+    return self.commitment_service.add_set_object(set_cid, object_cid)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 437, in add_set_object
+    receipt = self._post_execute(
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 343, in _post_execute
+    raise e
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 336, in _post_execute
+    self._check_tx_success(receipt)
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\web3_commitment_service.py", line 97, in _check_tx_success
+    raise RuntimeError(msg)
+RuntimeError: Transaction failed with receipt: {'blockHash': '0xa786e26541e3e17107f9d573aefa48954ac3da189bc58768cee272eff9bb5f22',
+ 'blockNumber': 71491302,
+ 'cumulativeGasUsed': 2264235,
+ 'effectiveGasPrice': 78530121024,
+ 'from': '0x0782711e42aeed05ddad11b94d21ae348774912b',
+ 'gasUsed': 28747,
+ 'logs': [{'address': '0x0000000000000000000000000000000000001010',
+           'blockHash': '0xa786e26541e3e17107f9d573aefa48954ac3da189bc58768cee272eff9bb5f22',
+           'blockNumber': 71491302,
+           'data': '0x000000000000000000000000000000000000000000000000000597a0e4d53d42000000000000000000000000000000000000000000000001403e476ffcebde6a000000000000000000000000000000000000000000001542bfa1a74689b0a5780000000000000000000000000000000000000000000000014038afcf1816a128000000000000000000000000000000000000000000001542bfa73ee76e85e2ba',
+           'logIndex': 83,
+           'removed': False,
+           'topics': ['0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63',
+                      '0x0000000000000000000000000000000000000000000000000000000000001010',
+                      '0x0000000000000000000000000782711e42aeed05ddad11b94d21ae348774912b',
+                      '0x00000000000000000000000083d69448f88bf9c701c1b93f43e1f753d39b2632'],
+           'transactionHash': '0x42cc4e946e2a0e249f1d5bbd2e125e2d86718bca734310e0de8ea7f47d200f6a',
+           'transactionIndex': 10}],
+ 'logsBloom': '0x00000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000008000000000000000000000000000000000000000008000000000000000800000000000000200000100000000000000000000000000000000000000000000000000000800100080000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000004000000000000000000001000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000140000',
+ 'status': 0,
+ 'to': '0x80d2ab15ee5b91cd7a183b8938dc277fe6191f7d',
+ 'transactionHash': '0x42cc4e946e2a0e249f1d5bbd2e125e2d86718bca734310e0de8ea7f47d200f6a',
+ 'transactionIndex': 10,
+ 'type': 2}
