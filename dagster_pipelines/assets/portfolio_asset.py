@@ -50,7 +50,7 @@ def sector_portfolios(context):
     file_logger.info("Starting sector portfolios generation for %s", partition_date)
 
     try:
-        df_portfolios = produce_sector_portfolios(partition_date, logger=file_logger)
+        df_portfolios = produce_sector_portfolios(partition_date, logger=file_logger, half_life=30)
         context.log.info(f"{partition_date}: portfolios_df = \n{df_portfolios}")
         file_logger.info("Generated portfolios:\n%s", df_portfolios)
 

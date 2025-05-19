@@ -1,9 +1,10 @@
 """
-This module contains the logic for producing portfolio positions.
+This module contains the logic for producing portfolio positions using exponentially weighted robust regressions.
 """
 import os, time, logging
 from datetime import datetime, timedelta
 import pickle
+import numpy as np
 import pandas as pd
 import pandas_market_calendars as mcal
 import yfinance as yf
@@ -12,6 +13,30 @@ import yfinance as yf
 import statsmodels.api as sm
 from statsmodels.robust.robust_linear_model import RLM
 from statsmodels.robust.norms import HuberT
+
+from .robust_regression import compute_time_weighted_robust_betas
+
+# Logging setup
+def get_run_logger(partition_date: str):
+    """Create a new file-based logger for each run."""
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_dir = "run_logs"
+    os.makedirs(log_dir, exist_ok=True)
+    log_path = os.path.join(log_dir, f"sector_portfolios_run_{partition_date}_{timestamp}.log")
+
+    logger = logging.getLogger(f"sector_portfolios_logger_{partition_date}_{timestamp}")
+    logger.setLevel(logging.INFO)
+
+    # Clear existing handlers
+    if logger.hasHandlers():
+        logger.handlers.clear()
+
+    file_handler = logging.FileHandler(log_path)
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
+
+    return logger
 
 def download_ticker_with_smart_cache(ticker, start, end, cache_dir='data/cache', force_refresh=False):
     os.makedirs(cache_dir, exist_ok=True)
@@ -31,7 +56,6 @@ def download_ticker_with_smart_cache(ticker, start, end, cache_dir='data/cache',
             new_data = yf.download(ticker, start=fetch_start.strftime('%Y-%m-%d'), end=fetch_end.strftime('%Y-%m-%d'), auto_adjust=False)
             combined = pd.concat([cached_data, new_data])
             combined = combined[~combined.index.duplicated(keep='last')].sort_index()
-
             with open(cache_file, 'wb') as f:
                 pickle.dump(combined, f)
             return combined.loc[start:end]
@@ -45,28 +69,22 @@ def download_ticker_with_smart_cache(ticker, start, end, cache_dir='data/cache',
         pickle.dump(data, f)
     return data
 
-
-def produce_sector_portfolios(portfolio_date: str, logger: object) -> pd.DataFrame:
+def produce_sector_portfolios(portfolio_date: str, logger: object, half_life: float = 21) -> pd.DataFrame:
     """
-    Generate market-neutral long and short portfolios for 11 sector ETFs hedged against SPY.
+    Generate market-neutral long and short portfolios for 11 sector ETFs hedged against SPY using exponentially weighted robust regression.
     """
-    # Check if there is trading on portfolio_date
     schedule = mcal.get_calendar("NYSE").schedule(start_date=portfolio_date, end_date=portfolio_date)
     if schedule.empty:
         logger.warning(f"No trading on {portfolio_date}.")
         raise ValueError(f"No trading on {portfolio_date}.")
 
-    # Define tickers
     etf_tickers = ['XLK', 'XLF', 'XLV', 'XLY', 'XLP', 'XLE', 'XLI', 'XLB', 'XLU', 'XLC', 'XLRE']
     tickers = etf_tickers + ['SPY']
 
-    # Calculate start and end dates
     end_date = pd.to_datetime(portfolio_date)
     start_date = end_date - pd.Timedelta(days=90)
 
-    # Fetch data
     all_data = []
-
     for ticker in tickers:
         try:
             data = download_ticker_with_smart_cache(ticker, start_date, end_date)
@@ -81,54 +99,29 @@ def produce_sector_portfolios(portfolio_date: str, logger: object) -> pd.DataFra
     if not all_data:
         raise ValueError("No data was downloaded for the given tickers.")
 
-    # Compute returns
     merged_data = pd.concat(all_data, axis=1, join='inner')
     returns = merged_data.pct_change().dropna()
     if returns.empty:
         raise ValueError("No return data available after dropping NaNs.")
 
-    # Estimate betas
-    betas = {}
-    for etf in etf_tickers:
-        y = returns[etf]
-        X = sm.add_constant(returns['SPY'])
-        model = RLM(y, X, M=HuberT(t=1.345))
-        results = model.fit()
-        betas[etf] = results.params['SPY']
-        logger.info(f"Estimated beta for {etf}: {betas[etf]:.4f}")
+    Y = returns[etf_tickers]
+    X = returns[['SPY']]
+    betas = compute_time_weighted_robust_betas(Y, X, half_life=half_life)
 
-    # Create portfolios
     all_positions = []
     for etf in etf_tickers:
-        beta = betas[etf]
-        # Long portfolio
+        beta = betas.get('SPY', np.nan)
+        if np.isnan(beta):
+            logger.warning(f"Missing beta for {etf}. Skipping.")
+            continue
+
         all_positions.append({"portfolio_name": f"{etf}_long", "sym": etf, "wt": 1})
         all_positions.append({"portfolio_name": f"{etf}_long", "sym": "SPY", "wt": -beta})
-        # Short portfolio
+
         all_positions.append({"portfolio_name": f"{etf}_short", "sym": etf, "wt": -1})
         all_positions.append({"portfolio_name": f"{etf}_short", "sym": "SPY", "wt": beta})
 
+        logger.info(f"Portfolio {etf}: beta = {beta:.4f}")
+
     position_df = pd.DataFrame(all_positions)
     return position_df
-
-
-def get_run_logger(partition_date: str):
-    """Create a new file-based logger for each Dagster run."""
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    log_dir = "run_logs"
-    os.makedirs(log_dir, exist_ok=True)
-    log_path = os.path.join(log_dir, f"sector_portfolios_run_{partition_date}_{timestamp}.log")
-
-    logger = logging.getLogger(f"sector_portfolios_logger_{partition_date}_{timestamp}")
-    logger.setLevel(logging.INFO)
-
-    # Clear handlers to avoid duplication
-    if logger.hasHandlers():
-        logger.handlers.clear()
-
-    file_handler = logging.FileHandler(log_path)
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-    file_handler.setFormatter(formatter)
-    logger.addHandler(file_handler)
-
-    return logger
