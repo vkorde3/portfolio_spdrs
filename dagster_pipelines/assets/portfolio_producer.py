@@ -1,6 +1,7 @@
 """
-This module contains the logic for producing portfolio positions using exponentially weighted robust regressions.
+This module contains the logic for producing portfolio positions using point-in-time robust regressions.
 """
+
 import os
 import time
 import logging
@@ -13,11 +14,7 @@ import pandas as pd
 import pandas_market_calendars as mcal
 import yfinance as yf
 
-import statsmodels.api as sm
-from statsmodels.robust.robust_linear_model import RLM
-from statsmodels.robust.norms import HuberT
-
-from .robust_regression import compute_time_weighted_robust_betas
+from vbase_utils.stats import pit_robust_betas
 
 
 def get_run_logger(partition_date: str) -> logging.Logger:
@@ -92,7 +89,7 @@ def produce_sector_portfolios(
 ) -> pd.DataFrame:
     """
     Generate market-neutral long and short portfolios for 11 sector ETFs hedged against SPY
-    using exponentially weighted robust regression.
+    using point-in-time robust regression.
 
     Args:
         portfolio_date: The date for which to generate the portfolios.
@@ -138,11 +135,21 @@ def produce_sector_portfolios(
 
     Y = returns[etf_tickers]
     X = returns[['SPY']]
-    betas: dict[str, float] = compute_time_weighted_robust_betas(Y, X, half_life=half_life)
+
+    pt_results = pit_robust_betas(
+        df_asset_rets=Y,
+        df_fact_rets=X,
+        half_life=half_life,
+        min_timestamps=10,
+    )
+
+    df_betas = pt_results["df_betas"]
+    latest_ts = df_betas.index.get_level_values("timestamp").max()
+    spy_betas_latest = df_betas.loc[latest_ts].loc["SPY"]
 
     all_positions: list[dict[str, object]] = []
     for etf in etf_tickers:
-        beta = betas.get('SPY', np.nan)
+        beta = spy_betas_latest.get(etf, np.nan)
         if np.isnan(beta):
             logger.warning(f"Missing beta for {etf}. Skipping.")
             continue
