@@ -1,0 +1,238 @@
+2025-06-11 01:30:34,004 - INFO - Starting sector portfolios generation for 2025-06-05
+2025-06-11 01:30:47,055 - INFO - Portfolio XLK, Factor XLK: beta = 1.2590
+2025-06-11 01:30:47,057 - INFO - Portfolio XLF, Factor XLF: beta = 0.7727
+2025-06-11 01:30:47,058 - INFO - Portfolio XLV, Factor XLV: beta = 0.5561
+2025-06-11 01:30:47,059 - INFO - Portfolio XLY, Factor XLY: beta = 1.1087
+2025-06-11 01:30:47,060 - INFO - Portfolio XLP, Factor XLP: beta = 0.3156
+2025-06-11 01:30:47,061 - INFO - Portfolio XLE, Factor XLE: beta = 0.8754
+2025-06-11 01:30:47,063 - INFO - Portfolio XLI, Factor XLI: beta = 0.8720
+2025-06-11 01:30:47,064 - INFO - Portfolio XLB, Factor XLB: beta = 0.8379
+2025-06-11 01:30:47,065 - INFO - Portfolio XLU, Factor XLU: beta = 0.3477
+2025-06-11 01:30:47,066 - INFO - Portfolio XLC, Factor XLC: beta = 0.8529
+2025-06-11 01:30:47,067 - INFO - Portfolio XLRE, Factor XLRE: beta = 0.5745
+2025-06-11 01:30:47,159 - INFO - Generated portfolios:
+   portfolio_name   sym                                                 wt
+0        XLK_long   XLK                                                  1
+1        XLK_long   SPY   Ticker
+XLK   -1.259034
+Name: SPY, dtype: float64
+2       XLK_short   XLK                                                 -1
+3       XLK_short   SPY   Ticker
+XLK    1.259034
+Name: SPY, dtype: float64
+4        XLF_long   XLF                                                  1
+5        XLF_long   SPY   Ticker
+XLF   -0.772665
+Name: SPY, dtype: float64
+6       XLF_short   XLF                                                 -1
+7       XLF_short   SPY   Ticker
+XLF    0.772665
+Name: SPY, dtype: float64
+8        XLV_long   XLV                                                  1
+9        XLV_long   SPY   Ticker
+XLV   -0.556118
+Name: SPY, dtype: float64
+10      XLV_short   XLV                                                 -1
+11      XLV_short   SPY   Ticker
+XLV    0.556118
+Name: SPY, dtype: float64
+12       XLY_long   XLY                                                  1
+13       XLY_long   SPY    Ticker
+XLY   -1.10872
+Name: SPY, dtype: float64
+14      XLY_short   XLY                                                 -1
+15      XLY_short   SPY    Ticker
+XLY    1.10872
+Name: SPY, dtype: float64
+16       XLP_long   XLP                                                  1
+17       XLP_long   SPY   Ticker
+XLP   -0.315636
+Name: SPY, dtype: float64
+18      XLP_short   XLP                                                 -1
+19      XLP_short   SPY   Ticker
+XLP    0.315636
+Name: SPY, dtype: float64
+20       XLE_long   XLE                                                  1
+21       XLE_long   SPY   Ticker
+XLE   -0.875429
+Name: SPY, dtype: float64
+22      XLE_short   XLE                                                 -1
+23      XLE_short   SPY   Ticker
+XLE    0.875429
+Name: SPY, dtype: float64
+24       XLI_long   XLI                                                  1
+25       XLI_long   SPY   Ticker
+XLI   -0.872017
+Name: SPY, dtype: float64
+26      XLI_short   XLI                                                 -1
+27      XLI_short   SPY   Ticker
+XLI    0.872017
+Name: SPY, dtype: float64
+28       XLB_long   XLB                                                  1
+29       XLB_long   SPY   Ticker
+XLB   -0.837892
+Name: SPY, dtype: float64
+30      XLB_short   XLB                                                 -1
+31      XLB_short   SPY   Ticker
+XLB    0.837892
+Name: SPY, dtype: float64
+32       XLU_long   XLU                                                  1
+33       XLU_long   SPY   Ticker
+XLU   -0.347716
+Name: SPY, dtype: float64
+34      XLU_short   XLU                                                 -1
+35      XLU_short   SPY   Ticker
+XLU    0.347716
+Name: SPY, dtype: float64
+36       XLC_long   XLC                                                  1
+37       XLC_long   SPY   Ticker
+XLC   -0.852892
+Name: SPY, dtype: float64
+38      XLC_short   XLC                                                 -1
+39      XLC_short   SPY   Ticker
+XLC    0.852892
+Name: SPY, dtype: float64
+40      XLRE_long  XLRE                                                  1
+41      XLRE_long   SPY  Ticker
+XLRE   -0.574472
+Name: SPY, dtype: float64
+42     XLRE_short  XLRE                                                 -1
+43     XLRE_short   SPY  Ticker
+XLRE    0.574472
+Name: SPY, dtype: float64
+2025-06-11 01:30:47,245 - INFO - Saved portfolios to data\sector_portfolios--2025-06-11_01-30-47.csv
+2025-06-11 01:30:47,317 - INFO - Portfolios CSV content:
+portfolio_name,sym,wt
+XLK_long,XLK,1
+XLK_long,SPY,"Ticker
+XLK   -1.259034
+Name: SPY, dtype: float64"
+XLK_short,XLK,-1
+XLK_short,SPY,"Ticker
+XLK    1.259034
+Name: SPY, dtype: float64"
+XLF_long,XLF,1
+XLF_long,SPY,"Ticker
+XLF   -0.772665
+Name: SPY, dtype: float64"
+XLF_short,XLF,-1
+XLF_short,SPY,"Ticker
+XLF    0.772665
+Name: SPY, dtype: float64"
+XLV_long,XLV,1
+XLV_long,SPY,"Ticker
+XLV   -0.556118
+Name: SPY, dtype: float64"
+XLV_short,XLV,-1
+XLV_short,SPY,"Ticker
+XLV    0.556118
+Name: SPY, dtype: float64"
+XLY_long,XLY,1
+XLY_long,SPY,"Ticker
+XLY   -1.10872
+Name: SPY, dtype: float64"
+XLY_short,XLY,-1
+XLY_short,SPY,"Ticker
+XLY    1.10872
+Name: SPY, dtype: float64"
+XLP_long,XLP,1
+XLP_long,SPY,"Ticker
+XLP   -0.315636
+Name: SPY, dtype: float64"
+XLP_short,XLP,-1
+XLP_short,SPY,"Ticker
+XLP    0.315636
+Name: SPY, dtype: float64"
+XLE_long,XLE,1
+XLE_long,SPY,"Ticker
+XLE   -0.875429
+Name: SPY, dtype: float64"
+XLE_short,XLE,-1
+XLE_short,SPY,"Ticker
+XLE    0.875429
+Name: SPY, dtype: float64"
+XLI_long,XLI,1
+XLI_long,SPY,"Ticker
+XLI   -0.872017
+Name: SPY, dtype: float64"
+XLI_short,XLI,-1
+XLI_short,SPY,"Ticker
+XLI    0.872017
+Name: SPY, dtype: float64"
+XLB_long,XLB,1
+XLB_long,SPY,"Ticker
+XLB   -0.837892
+Name: SPY, dtype: float64"
+XLB_short,XLB,-1
+XLB_short,SPY,"Ticker
+XLB    0.837892
+Name: SPY, dtype: float64"
+XLU_long,XLU,1
+XLU_long,SPY,"Ticker
+XLU   -0.347716
+Name: SPY, dtype: float64"
+XLU_short,XLU,-1
+XLU_short,SPY,"Ticker
+XLU    0.347716
+Name: SPY, dtype: float64"
+XLC_long,XLC,1
+XLC_long,SPY,"Ticker
+XLC   -0.852892
+Name: SPY, dtype: float64"
+XLC_short,XLC,-1
+XLC_short,SPY,"Ticker
+XLC    0.852892
+Name: SPY, dtype: float64"
+XLRE_long,XLRE,1
+XLRE_long,SPY,"Ticker
+XLRE   -0.574472
+Name: SPY, dtype: float64"
+XLRE_short,XLRE,-1
+XLRE_short,SPY,"Ticker
+XLRE    0.574472
+Name: SPY, dtype: float64"
+
+2025-06-11 01:30:56,444 - ERROR - Error during sector portfolios generation
+Traceback (most recent call last):
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_asset.py", line 84, in sector_portfolios
+    receipt = ds.add_record(body)
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\vbase_dataset.py", line 264, in add_record
+    cl = self.vbc.add_set_object(self.cid, object_cid)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\vbase_client.py", line 242, in add_set_object
+    return self.commitment_service.add_set_object(set_cid, object_cid)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 437, in add_set_object
+    receipt = self._post_execute(
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 343, in _post_execute
+    raise e
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\forwarder_commitment_service.py", line 336, in _post_execute
+    self._check_tx_success(receipt)
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\vbase\core\web3_commitment_service.py", line 97, in _check_tx_success
+    raise RuntimeError(msg)
+RuntimeError: Transaction failed with receipt: {'blockHash': '0xe2a5749751c7f03f9c02e99892570224de0d1d7b0c7d66b92231904dd82237fe',
+ 'blockNumber': 72624735,
+ 'cumulativeGasUsed': 2954339,
+ 'effectiveGasPrice': 45000000015,
+ 'from': '0x0782711e42aeed05ddad11b94d21ae348774912b',
+ 'gasUsed': 28771,
+ 'logs': [{'address': '0x0000000000000000000000000000000000001010',
+           'blockHash': '0xe2a5749751c7f03f9c02e99892570224de0d1d7b0c7d66b92231904dd82237fe',
+           'blockNumber': 72624735,
+           'data': '0x00000000000000000000000000000000000000000000000000049984ab8107b100000000000000000000000000000000000000000000000128cfda5e9272f93500000000000000000000000000000000000000000000469dca97a7ee51828fc000000000000000000000000000000000000000000000000128cb40d9e6f1f18400000000000000000000000000000000000000000000469dca9c4172fd039771',
+           'logIndex': 149,
+           'removed': False,
+           'topics': ['0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63',
+                      '0x0000000000000000000000000000000000000000000000000000000000001010',
+                      '0x0000000000000000000000000782711e42aeed05ddad11b94d21ae348774912b',
+                      '0x0000000000000000000000001efecb61a2f80aa34d3b9218b564a64d05946290'],
+           'transactionHash': '0x25d8fbefba29d8dba2b3c7b7c4d67ba69e6c0b85843db72f7b1b74e7a65481db',
+           'transactionIndex': 24}],
+ 'logsBloom': '0x00000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000008000000000000000000000000000200000000000000000000000000000800000000000000200000100000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000004000000100000000000001000000000000000000000000000000100000000000002000000000000000000000000000000000000000000000000000000000140000',
+ 'status': 0,
+ 'to': '0x80d2ab15ee5b91cd7a183b8938dc277fe6191f7d',
+ 'transactionHash': '0x25d8fbefba29d8dba2b3c7b7c4d67ba69e6c0b85843db72f7b1b74e7a65481db',
+ 'transactionIndex': 24,
+ 'type': 2}

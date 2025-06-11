@@ -1,0 +1,13 @@
+2025-06-11 00:37:36,661 - INFO - Starting sector portfolios generation for 2025-06-03
+2025-06-11 00:37:37,716 - ERROR - Error during sector portfolios generation
+Traceback (most recent call last):
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_asset.py", line 58, in sector_portfolios
+    df_portfolios: pd.DataFrame = produce_sector_portfolios(partition_date, logger=file_logger, half_life=30)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_producer.py", line 140, in produce_sector_portfolios
+    df_fact_rets=X.to_frame(name="SPY"),
+                 ^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\dagster_env\Lib\site-packages\pandas\core\generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'to_frame'

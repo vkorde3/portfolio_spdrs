@@ -13,9 +13,9 @@ import numpy as np
 import pandas as pd
 import pandas_market_calendars as mcal
 import yfinance as yf
+from dagster import Failure
 
-from vbase_utils.stats import pit_robust_betas
-
+from vbase_utils.stats.pit_robust_betas import pit_robust_betas as calc_betas
 
 def get_run_logger(partition_date: str) -> logging.Logger:
     """Create a new file-based logger for each run."""
@@ -99,10 +99,13 @@ def produce_sector_portfolios(
     Returns:
         A DataFrame with portfolio positions.
     """
+    if pd.to_datetime(portfolio_date).weekday() >= 5:
+        raise Failure(description=f"{portfolio_date} is a weekend. Skipping execution.")
+    
     schedule = mcal.get_calendar("NYSE").schedule(start_date=portfolio_date, end_date=portfolio_date)
     if schedule.empty:
         logger.warning(f"No trading on {portfolio_date}.")
-        raise ValueError(f"No trading on {portfolio_date}.")
+        raise Failure(description=f"No trading on {portfolio_date}.")
 
     etf_tickers: list[str] = [
         'XLK', 'XLF', 'XLV', 'XLY', 'XLP',
@@ -134,9 +137,9 @@ def produce_sector_portfolios(
         raise ValueError("No return data available after dropping NaNs.")
 
     Y = returns[etf_tickers]
-    X = returns[['SPY']]
+    X = returns['SPY']
 
-    pt_results = pit_robust_betas(
+    pt_results = calc_betas(
         df_asset_rets=Y,
         df_fact_rets=X,
         half_life=half_life,
@@ -150,7 +153,7 @@ def produce_sector_portfolios(
     all_positions: list[dict[str, object]] = []
     for etf in etf_tickers:
         beta = spy_betas_latest.get(etf, np.nan)
-        if np.isnan(beta):
+        if beta.isna().all():
             logger.warning(f"Missing beta for {etf}. Skipping.")
             continue
 
@@ -160,7 +163,9 @@ def produce_sector_portfolios(
         all_positions.append({"portfolio_name": f"{etf}_short", "sym": etf, "wt": -1})
         all_positions.append({"portfolio_name": f"{etf}_short", "sym": "SPY", "wt": beta})
 
-        logger.info(f"Portfolio {etf}: beta = {beta:.4f}")
+        for factor, b_val in beta.items():
+            logger.info(f"Portfolio {etf}, Factor {factor}: beta = {b_val:.4f}")
+
 
     position_df = pd.DataFrame(all_positions)
     return position_df

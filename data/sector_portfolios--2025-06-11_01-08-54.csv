@@ -1,0 +1,89 @@
+portfolio_name,sym,wt
+XLK_long,XLK,1
+XLK_long,SPY,"Ticker
+XLK   -1.250499
+Name: SPY, dtype: float64"
+XLK_short,XLK,-1
+XLK_short,SPY,"Ticker
+XLK    1.250499
+Name: SPY, dtype: float64"
+XLF_long,XLF,1
+XLF_long,SPY,"Ticker
+XLF   -0.776786
+Name: SPY, dtype: float64"
+XLF_short,XLF,-1
+XLF_short,SPY,"Ticker
+XLF    0.776786
+Name: SPY, dtype: float64"
+XLV_long,XLV,1
+XLV_long,SPY,"Ticker
+XLV   -0.566708
+Name: SPY, dtype: float64"
+XLV_short,XLV,-1
+XLV_short,SPY,"Ticker
+XLV    0.566708
+Name: SPY, dtype: float64"
+XLY_long,XLY,1
+XLY_long,SPY,"Ticker
+XLY   -1.106108
+Name: SPY, dtype: float64"
+XLY_short,XLY,-1
+XLY_short,SPY,"Ticker
+XLY    1.106108
+Name: SPY, dtype: float64"
+XLP_long,XLP,1
+XLP_long,SPY,"Ticker
+XLP   -0.319571
+Name: SPY, dtype: float64"
+XLP_short,XLP,-1
+XLP_short,SPY,"Ticker
+XLP    0.319571
+Name: SPY, dtype: float64"
+XLE_long,XLE,1
+XLE_long,SPY,"Ticker
+XLE   -0.909959
+Name: SPY, dtype: float64"
+XLE_short,XLE,-1
+XLE_short,SPY,"Ticker
+XLE    0.909959
+Name: SPY, dtype: float64"
+XLI_long,XLI,1
+XLI_long,SPY,"Ticker
+XLI   -0.873382
+Name: SPY, dtype: float64"
+XLI_short,XLI,-1
+XLI_short,SPY,"Ticker
+XLI    0.873382
+Name: SPY, dtype: float64"
+XLB_long,XLB,1
+XLB_long,SPY,"Ticker
+XLB   -0.833301
+Name: SPY, dtype: float64"
+XLB_short,XLB,-1
+XLB_short,SPY,"Ticker
+XLB    0.833301
+Name: SPY, dtype: float64"
+XLU_long,XLU,1
+XLU_long,SPY,"Ticker
+XLU   -0.361638
+Name: SPY, dtype: float64"
+XLU_short,XLU,-1
+XLU_short,SPY,"Ticker
+XLU    0.361638
+Name: SPY, dtype: float64"
+XLC_long,XLC,1
+XLC_long,SPY,"Ticker
+XLC   -0.850694
+Name: SPY, dtype: float64"
+XLC_short,XLC,-1
+XLC_short,SPY,"Ticker
+XLC    0.850694
+Name: SPY, dtype: float64"
+XLRE_long,XLRE,1
+XLRE_long,SPY,"Ticker
+XLRE   -0.574533
+Name: SPY, dtype: float64"
+XLRE_short,XLRE,-1
+XLRE_short,SPY,"Ticker
+XLRE    0.574533
+Name: SPY, dtype: float64"

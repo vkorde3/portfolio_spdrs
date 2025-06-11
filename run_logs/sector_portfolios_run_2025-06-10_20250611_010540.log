@@ -1,0 +1,199 @@
+2025-06-11 01:05:40,260 - INFO - Starting sector portfolios generation for 2025-06-10
+2025-06-11 01:05:57,835 - INFO - Portfolio XLK, Factor XLK: beta = 1.2495
+2025-06-11 01:05:57,836 - INFO - Portfolio XLF, Factor XLF: beta = 0.7777
+2025-06-11 01:05:57,837 - INFO - Portfolio XLV, Factor XLV: beta = 0.5743
+2025-06-11 01:05:57,838 - INFO - Portfolio XLY, Factor XLY: beta = 1.1062
+2025-06-11 01:05:57,838 - INFO - Portfolio XLP, Factor XLP: beta = 0.3210
+2025-06-11 01:05:57,839 - INFO - Portfolio XLE, Factor XLE: beta = 0.9110
+2025-06-11 01:05:57,840 - INFO - Portfolio XLI, Factor XLI: beta = 0.8729
+2025-06-11 01:05:57,841 - INFO - Portfolio XLB, Factor XLB: beta = 0.8331
+2025-06-11 01:05:57,843 - INFO - Portfolio XLU, Factor XLU: beta = 0.3659
+2025-06-11 01:05:57,844 - INFO - Portfolio XLC, Factor XLC: beta = 0.8503
+2025-06-11 01:05:57,845 - INFO - Portfolio XLRE, Factor XLRE: beta = 0.5749
+2025-06-11 01:05:57,929 - INFO - Generated portfolios:
+   portfolio_name   sym                                                 wt
+0        XLK_long   XLK                                                  1
+1        XLK_long   SPY   Ticker
+XLK   -1.249522
+Name: SPY, dtype: float64
+2       XLK_short   XLK                                                 -1
+3       XLK_short   SPY   Ticker
+XLK    1.249522
+Name: SPY, dtype: float64
+4        XLF_long   XLF                                                  1
+5        XLF_long   SPY   Ticker
+XLF   -0.777723
+Name: SPY, dtype: float64
+6       XLF_short   XLF                                                 -1
+7       XLF_short   SPY   Ticker
+XLF    0.777723
+Name: SPY, dtype: float64
+8        XLV_long   XLV                                                  1
+9        XLV_long   SPY   Ticker
+XLV   -0.574281
+Name: SPY, dtype: float64
+10      XLV_short   XLV                                                 -1
+11      XLV_short   SPY   Ticker
+XLV    0.574281
+Name: SPY, dtype: float64
+12       XLY_long   XLY                                                  1
+13       XLY_long   SPY   Ticker
+XLY   -1.106169
+Name: SPY, dtype: float64
+14      XLY_short   XLY                                                 -1
+15      XLY_short   SPY   Ticker
+XLY    1.106169
+Name: SPY, dtype: float64
+16       XLP_long   XLP                                                  1
+17       XLP_long   SPY   Ticker
+XLP   -0.320969
+Name: SPY, dtype: float64
+18      XLP_short   XLP                                                 -1
+19      XLP_short   SPY   Ticker
+XLP    0.320969
+Name: SPY, dtype: float64
+20       XLE_long   XLE                                                  1
+21       XLE_long   SPY   Ticker
+XLE   -0.911026
+Name: SPY, dtype: float64
+22      XLE_short   XLE                                                 -1
+23      XLE_short   SPY   Ticker
+XLE    0.911026
+Name: SPY, dtype: float64
+24       XLI_long   XLI                                                  1
+25       XLI_long   SPY   Ticker
+XLI   -0.872875
+Name: SPY, dtype: float64
+26      XLI_short   XLI                                                 -1
+27      XLI_short   SPY   Ticker
+XLI    0.872875
+Name: SPY, dtype: float64
+28       XLB_long   XLB                                                  1
+29       XLB_long   SPY   Ticker
+XLB   -0.833062
+Name: SPY, dtype: float64
+30      XLB_short   XLB                                                 -1
+31      XLB_short   SPY   Ticker
+XLB    0.833062
+Name: SPY, dtype: float64
+32       XLU_long   XLU                                                  1
+33       XLU_long   SPY     Ticker
+XLU   -0.3659
+Name: SPY, dtype: float64
+34      XLU_short   XLU                                                 -1
+35      XLU_short   SPY     Ticker
+XLU    0.3659
+Name: SPY, dtype: float64
+36       XLC_long   XLC                                                  1
+37       XLC_long   SPY   Ticker
+XLC   -0.850254
+Name: SPY, dtype: float64
+38      XLC_short   XLC                                                 -1
+39      XLC_short   SPY   Ticker
+XLC    0.850254
+Name: SPY, dtype: float64
+40      XLRE_long  XLRE                                                  1
+41      XLRE_long   SPY  Ticker
+XLRE   -0.574908
+Name: SPY, dtype: float64
+42     XLRE_short  XLRE                                                 -1
+43     XLRE_short   SPY  Ticker
+XLRE    0.574908
+Name: SPY, dtype: float64
+2025-06-11 01:05:58,023 - INFO - Saved portfolios to data\sector_portfolios--2025-06-11_01-05-57.csv
+2025-06-11 01:05:58,098 - INFO - Portfolios CSV content:
+portfolio_name,sym,wt
+XLK_long,XLK,1
+XLK_long,SPY,"Ticker
+XLK   -1.249522
+Name: SPY, dtype: float64"
+XLK_short,XLK,-1
+XLK_short,SPY,"Ticker
+XLK    1.249522
+Name: SPY, dtype: float64"
+XLF_long,XLF,1
+XLF_long,SPY,"Ticker
+XLF   -0.777723
+Name: SPY, dtype: float64"
+XLF_short,XLF,-1
+XLF_short,SPY,"Ticker
+XLF    0.777723
+Name: SPY, dtype: float64"
+XLV_long,XLV,1
+XLV_long,SPY,"Ticker
+XLV   -0.574281
+Name: SPY, dtype: float64"
+XLV_short,XLV,-1
+XLV_short,SPY,"Ticker
+XLV    0.574281
+Name: SPY, dtype: float64"
+XLY_long,XLY,1
+XLY_long,SPY,"Ticker
+XLY   -1.106169
+Name: SPY, dtype: float64"
+XLY_short,XLY,-1
+XLY_short,SPY,"Ticker
+XLY    1.106169
+Name: SPY, dtype: float64"
+XLP_long,XLP,1
+XLP_long,SPY,"Ticker
+XLP   -0.320969
+Name: SPY, dtype: float64"
+XLP_short,XLP,-1
+XLP_short,SPY,"Ticker
+XLP    0.320969
+Name: SPY, dtype: float64"
+XLE_long,XLE,1
+XLE_long,SPY,"Ticker
+XLE   -0.911026
+Name: SPY, dtype: float64"
+XLE_short,XLE,-1
+XLE_short,SPY,"Ticker
+XLE    0.911026
+Name: SPY, dtype: float64"
+XLI_long,XLI,1
+XLI_long,SPY,"Ticker
+XLI   -0.872875
+Name: SPY, dtype: float64"
+XLI_short,XLI,-1
+XLI_short,SPY,"Ticker
+XLI    0.872875
+Name: SPY, dtype: float64"
+XLB_long,XLB,1
+XLB_long,SPY,"Ticker
+XLB   -0.833062
+Name: SPY, dtype: float64"
+XLB_short,XLB,-1
+XLB_short,SPY,"Ticker
+XLB    0.833062
+Name: SPY, dtype: float64"
+XLU_long,XLU,1
+XLU_long,SPY,"Ticker
+XLU   -0.3659
+Name: SPY, dtype: float64"
+XLU_short,XLU,-1
+XLU_short,SPY,"Ticker
+XLU    0.3659
+Name: SPY, dtype: float64"
+XLC_long,XLC,1
+XLC_long,SPY,"Ticker
+XLC   -0.850254
+Name: SPY, dtype: float64"
+XLC_short,XLC,-1
+XLC_short,SPY,"Ticker
+XLC    0.850254
+Name: SPY, dtype: float64"
+XLRE_long,XLRE,1
+XLRE_long,SPY,"Ticker
+XLRE   -0.574908
+Name: SPY, dtype: float64"
+XLRE_short,XLRE,-1
+XLRE_short,SPY,"Ticker
+XLRE    0.574908
+Name: SPY, dtype: float64"
+
+2025-06-11 01:06:07,158 - INFO - vBase receipt:
+{'objectCid': '0x26a7ef079efafdbc524851928cde3b23aff8674e0ae4882495f20350570f9426',
+ 'timestamp': '2025-06-11 05:06:05+00:00',
+ 'transactionHash': '0x18b299605597c75349ba577250a8595d414f8a7d2d897e7217183fa6c29c1e15',
+ 'user': '0x17324356831b7e30263e015a4D94aB9dA279e3a5'}

@@ -1,0 +1,9 @@
+2025-06-11 01:40:35,130 - INFO - Starting sector portfolios generation for 2025-06-07
+2025-06-11 01:40:35,155 - ERROR - Error during sector portfolios generation
+Traceback (most recent call last):
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_asset.py", line 58, in sector_portfolios
+    df_portfolios: pd.DataFrame = produce_sector_portfolios(partition_date, logger=file_logger, half_life=30)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_producer.py", line 103, in produce_sector_portfolios
+    raise Failure(description=f"{portfolio_date} is a weekend. Skipping execution.")
+dagster._core.definitions.events.Failure: 2025-06-07 is a weekend. Skipping execution.

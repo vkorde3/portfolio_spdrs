@@ -1,0 +1,10 @@
+2025-06-11 00:15:53,424 - INFO - Starting sector portfolios generation for 2025-06-05
+2025-06-11 00:16:04,708 - ERROR - Error during sector portfolios generation
+Traceback (most recent call last):
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_asset.py", line 58, in sector_portfolios
+    df_portfolios: pd.DataFrame = produce_sector_portfolios(partition_date, logger=file_logger, half_life=30)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kvs39\Desktop\validityBase\Dagster\portfolio_spdrs\dagster_pipelines\assets\portfolio_producer.py", line 138, in produce_sector_portfolios
+    pt_results = pit_robust_betas(
+                 ^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
