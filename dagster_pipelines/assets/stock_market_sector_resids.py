@@ -123,9 +123,9 @@ def run_sector_backtest_from_csv(csv_path: str, output_dir: str = "data/backtest
     )
 
     Path(output_dir).mkdir(parents=True, exist_ok=True)
-    results["df_betas"].to_csv(Path(output_dir) / "sector_betas.csv")
-    results["df_hedge_rets"].to_csv(Path(output_dir) / "hedge_returns.csv")
-    results["df_asset_resids"].to_csv(Path(output_dir) / "residual_returns.csv")
+    results["df_betas"].dropna(how="all").to_csv(Path(output_dir) / "sector_betas.csv")
+    results["df_hedge_rets"].dropna(how="all").to_csv(Path(output_dir) / "hedge_returns.csv")
+    results["df_asset_resids"].dropna(how="all").to_csv(Path(output_dir) / "residual_returns.csv")
 
     logger.info(f"✅ Backtest results saved to {output_dir}")
 
