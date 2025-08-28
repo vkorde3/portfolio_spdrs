@@ -1,0 +1,21 @@
+# Dagster ecosystem (all versions must match)
+dagster==1.10.6
+dagster-cloud==1.10.6
+dagster-cloud-cli==1.10.6
+dagster-graphql==1.10.6
+dagster-webserver==1.10.6
+dagster-duckdb==0.26.6  # must match dagster 1.10.6 series
+
+# vbase-utils strict deps
+pandas==2.2.3
+statsmodels==0.14.4
+yfinance==0.2.55
+
+# pmdarima fix (avoid NumPy 2.x)
+numpy==1.26.4
+scipy==1.12.0
+cython==3.0.10
+pmdarima==2.0.4
+
+# useful extras
+matplotlib>=3.5
