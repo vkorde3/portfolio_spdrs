@@ -11,6 +11,8 @@ from sklearn.pipeline import Pipeline
 import os
 import sys
 
+from vbase_utils.stats.pit_robust_betas import pit_robust_betas
+
 sys.path.append('../../BWM/bwm_capstone_simulator/src')
 import capstone_simulator as cs
 # single_target_simulator import (
