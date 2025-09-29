@@ -1,0 +1,182 @@
+2025-09-26 10:51:28 - yfinance - ERROR - 
+2 Failed downloads:
+2025-09-26 10:51:28 - yfinance - ERROR - ['XLK', 'SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-26 10:51:28 - multi_target_utils - ERROR - No data returned from yfinance
+2025-09-26 10:53:20 - yfinance - ERROR - 
+2 Failed downloads:
+2025-09-26 10:53:20 - yfinance - ERROR - ['SPY', 'XLK']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-26 10:53:21 - multi_target_utils - ERROR - No data returned from yfinance
+2025-09-27 12:50:35 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:35 - yfinance - ERROR - ['S']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:50:36 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:36 - yfinance - ERROR - ['S']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:50:37 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:37 - yfinance - ERROR - ['S']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:50:38 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:38 - yfinance - ERROR - ['S']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:50:39 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:39 - yfinance - ERROR - ['S']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:50:41 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:41 - yfinance - ERROR - ['P']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:50:43 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:43 - yfinance - ERROR - ['P']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:50:44 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:44 - yfinance - ERROR - ['P']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:50:46 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:46 - yfinance - ERROR - ['P']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:50:47 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:47 - yfinance - ERROR - ['P']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:50:49 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:49 - yfinance - ERROR - ['Y']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:50:50 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:50 - yfinance - ERROR - ['Y']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:50:51 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:51 - yfinance - ERROR - ['Y']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:50:53 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:53 - yfinance - ERROR - ['Y']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:50:55 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:50:55 - yfinance - ERROR - ['Y']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:54:46 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:54:46 - yfinance - ERROR - ['S']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:54:48 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:54:48 - yfinance - ERROR - ['S']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:54:49 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:54:49 - yfinance - ERROR - ['S']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:54:51 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:54:51 - yfinance - ERROR - ['S']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:54:52 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:54:52 - yfinance - ERROR - ['S']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:54:54 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:54:54 - yfinance - ERROR - ['P']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:54:55 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:54:55 - yfinance - ERROR - ['P']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:54:56 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:54:56 - yfinance - ERROR - ['P']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:54:58 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:54:58 - yfinance - ERROR - ['P']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:35 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:35 - yfinance - ERROR - ['SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:36 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:36 - yfinance - ERROR - ['SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:38 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:38 - yfinance - ERROR - ['SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:39 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:39 - yfinance - ERROR - ['SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:40 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:40 - yfinance - ERROR - ['SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:42 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:42 - yfinance - ERROR - ['XLC']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:43 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:43 - yfinance - ERROR - ['XLC']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:44 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:44 - yfinance - ERROR - ['XLC']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:46 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:46 - yfinance - ERROR - ['XLC']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:47 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:47 - yfinance - ERROR - ['XLC']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:48 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:48 - yfinance - ERROR - ['XLY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:50 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:50 - yfinance - ERROR - ['XLY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:51 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:51 - yfinance - ERROR - ['XLY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:52 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:52 - yfinance - ERROR - ['XLY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:54 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:54 - yfinance - ERROR - ['XLY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:55 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:55 - yfinance - ERROR - ['XLP']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:57 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:57 - yfinance - ERROR - ['XLP']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:58 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:58 - yfinance - ERROR - ['XLP']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:56:59 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:56:59 - yfinance - ERROR - ['XLP']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:57:00 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:57:00 - yfinance - ERROR - ['XLP']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:57:02 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:57:02 - yfinance - ERROR - ['XLE']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:57:04 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:57:04 - yfinance - ERROR - ['XLE']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:57:54 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:57:54 - yfinance - ERROR - ['SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:57:55 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:57:55 - yfinance - ERROR - ['SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:57:57 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:57:57 - yfinance - ERROR - ['SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 12:57:58 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 12:57:58 - yfinance - ERROR - ['SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 13:00:43 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 13:00:43 - yfinance - ERROR - ['SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 13:00:44 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 13:00:44 - yfinance - ERROR - ['SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 13:00:46 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 13:00:46 - yfinance - ERROR - ['SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 13:00:47 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 13:00:47 - yfinance - ERROR - ['SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 13:00:48 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 13:00:48 - yfinance - ERROR - ['SPY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 13:00:49 - yfinance - ERROR - 
+1 Failed download:
+2025-09-27 13:00:49 - yfinance - ERROR - ['XLC']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-27 13:08:16 - yfinance - ERROR - 
+12 Failed downloads:
+2025-09-27 13:08:16 - yfinance - ERROR - ['XLI', 'XLU', 'XLY', 'XLF', 'XLE', 'XLRE', 'XLB', 'SPY', 'XLK', 'XLV', 'XLP', 'XLC']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-09-29 07:31:26 - yfinance - ERROR - 
+12 Failed downloads:
+2025-09-29 07:31:26 - yfinance - ERROR - ['XLV', 'XLY', 'SPY', 'XLRE', 'XLU', 'XLE', 'XLP', 'XLK', 'XLF', 'XLI', 'XLC', 'XLB']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
